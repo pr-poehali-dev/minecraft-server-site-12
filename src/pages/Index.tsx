@@ -69,8 +69,7 @@ const Index = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="minecraft-button minecraft-text text-lg px-8 py-4 text-white">
-                <Icon name="Play" className="mr-2" />
-                Играть сейчас
+                Играть
               </Button>
               <Button
                 variant="outline"
