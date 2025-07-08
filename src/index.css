@@ -34,6 +34,17 @@
 
     --radius: 0.5rem;
 
+    --minecraft-grass: 76 202 80;
+    --minecraft-dirt: 139 69 19;
+    --minecraft-stone: 105 105 105;
+    --minecraft-water: 30 144 255;
+    --minecraft-gold: 255 215 0;
+    --minecraft-beige: 245 245 220;
+    --minecraft-black: 0 0 0;
+    --minecraft-white: 255 255 255;
+    --minecraft-green: 0 255 0;
+    --minecraft-darkgreen: 0 100 0;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -93,9 +104,46 @@
 @layer base {
   * {
     @apply border-border;
+    image-rendering: pixelated;
   }
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Minecraft", "Courier New", monospace;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  .minecraft-text {
+    font-family: "Minecraft", "Courier New", monospace;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    image-rendering: pixelated;
+  }
+
+  .minecraft-button {
+    background: linear-gradient(180deg, #4caf50 0%, #2e7d32 100%);
+    border: 2px solid #1b5e20;
+    box-shadow: 0 4px 0 #1b5e20;
+    transition: all 0.1s ease;
+    image-rendering: pixelated;
+  }
+
+  .minecraft-button:hover {
+    transform: translateY(1px);
+    box-shadow: 0 3px 0 #1b5e20;
+  }
+
+  .minecraft-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #1b5e20;
+  }
+
+  .minecraft-card {
+    background: linear-gradient(145deg, #8b4513 0%, #654321 100%);
+    border: 3px solid #5d4037;
+    box-shadow: 0 4px 0 #3e2723;
+    image-rendering: pixelated;
   }
 }
