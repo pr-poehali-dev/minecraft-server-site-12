@@ -19,7 +19,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-6">
           <nav className="flex justify-between items-center">
             <div className="minecraft-text text-3xl text-yellow-200">
-              🏰 MINECRAFT SERVER
+              ARTPLAY MINECRAFT SERVER
             </div>
             <div className="flex space-x-6">
               <a
